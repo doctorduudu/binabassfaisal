@@ -31,3 +31,87 @@
     transform: rotate(360deg);
   }
 }
+
+#header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./img/home-bg.jpg") center center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 95vh;
+  width: 100%;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header #navbar-brand {
+  float: left;
+  margin: 10px 30px;
+  background-color: rgba(255, 140, 0, 0.486);
+  border: 1px solid darkorange;
+  border-radius: 20px 0 20px 0;
+}
+
+#header #navbar-brand a {
+  color: #ffffff;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 12px;
+}
+
+#header #navlinks {
+  float: right;
+  margin-top: 20px;
+}
+
+#header #navlinks li {
+  display: inline;
+  margin: 5px;
+}
+
+#header #navlinks a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid darkorange;
+  padding: 5px 10px;
+}
+
+#header #navlinks a:hover {
+  background-color: rgba(255, 140, 0, 0.486);
+  transition: ease-in 0.3s;
+}
+
+#header .quote {
+  position: absolute;
+  bottom: 15%;
+  right: 50%;
+  width: 70%;
+  transform: translate(50%, 50%);
+  text-align: center;
+  border: 2px solid rgba(255, 140, 0, 0.486);
+  padding: 0 5px 10px 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 140, 0, 0.151);
+}
+
+#header .quote .quote-text {
+}
+
+#header .quote .reference {
+  font-family: cursive;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 800px) {
+  #header .quote {
+    width: 90%;
+    bottom: 18%;
+  }
+}
